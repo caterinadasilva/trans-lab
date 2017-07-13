@@ -95,3 +95,36 @@ table {
     text-align: center;
     margin-right: 10px;
 }
+
+/*
+//	Botones
+*/
+
+.btn-primary {
+    color: #fff;
+    background-color: #F6A800;
+    border-color: #F6A800;
+    border-radius: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 16px;
+    padding: 16px;
+}
+.btn-primary.active, .btn-primary:active,
+.btn-primary:hover,.btn-primary:focus,
+.btn-primary:active:focus,
+.btn-primary:active:hover {
+	background-color: #F69000;
+	border-color: #F69000;
+}
+
+/*
+//	HOME
+*/
+
+#home {
+    margin: 20vh 0;
+}
+#home ul li {
+    margin: 10px 0;
+}
