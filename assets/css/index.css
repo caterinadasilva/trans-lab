@@ -99,7 +99,8 @@ header h1 {
 }
 .btn-primary.active, .btn-primary:active,
 .btn-primary:hover,.btn-primary:focus,
-.btn-primary:active:focus {
+.btn-primary:active:focus,
+.btn-primary:active:hover {
 	background-color: #F69000;
 	border-color: #F69000;
 }
