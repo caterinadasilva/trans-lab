@@ -54,6 +54,7 @@ table {
     background-color: #3E3F41;
     color: #fff;
     border: none;
+    margin: 0;
 }
 .navbar-brand {
     float: none;
@@ -81,6 +82,11 @@ table {
     height: 100vh;
     top: 0;
     box-shadow: rgba(0, 0, 0, 0.50) 30vh 0px;
+    z-index: 100;
+}
+.navbar-nav {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .navbar-nav>li>a {
 	display: flex;
@@ -99,7 +105,6 @@ table {
 /*
 //	Botones
 */
-
 .btn-primary {
     color: #fff;
     background-color: #F6A800;
@@ -119,12 +124,79 @@ table {
 }
 
 /*
+//  TIPOGRAFÍA
+*/
+h1,h2,h3,h4,h5,h6 {
+    border-bottom: 3px solid #F6A800;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+}
+label {
+    margin: 0 0 10px;
+}
+
+/*
 //	HOME
 */
-
 #home {
     margin: 20vh 0;
 }
 #home ul li {
     margin: 10px 0;
+}
+
+/*
+// PÁGINAS INTERIORES
+*/
+header {
+    padding: 1em 0;
+    background: #a9a9ab;
+    margin: 0 0 2em;
+}
+.lines-o {
+    text-align: center;
+    display: block;
+    margin: 20px 0;
+    position: relative;
+}
+.lines-o p {
+    font-weight: bold;
+}
+.lines-o p:before,
+.lines-o p:after {
+    width: 45%;
+    position: absolute;
+    content: '';
+    height: 3px;
+    background-color: #F6A800;
+    top: 5px;
+}
+.lines-o p:before {
+    left: 0;
+}
+.lines-o p:after {
+    right: 0;
+}
+#saldo-res {
+    margin: 3em 0 0;
+}
+#saldo-total .box .top {
+    background: #3E3F41;
+    text-align: center;
+    color: #fff;
+    padding: 5px 0;
+}
+#saldo-total .box .top .lead {
+    text-transform: uppercase;
+    margin: 0;
+}
+#saldo-total .box .bot {
+    background: #a9a9ab;
+    text-align: center;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
