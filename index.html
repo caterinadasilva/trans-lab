@@ -9,37 +9,46 @@
 	<meta name="author" content="Caterina Da Silva">
 	<!-- Bootstrap Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:300,400,700" rel="stylesheet">
 	<!-- Fontawesome -->
 	<script src="https://use.fontawesome.com/d2c9b2c5c1.js"></script>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
 </head>
 <body>
-<menu>
-	<div class="container">
-		<div class="row">
-			
-		</div>
-	</div>
-</menu>
 <header>
 	<div class="container">
-		<div class="row">
-			
+		<div class="row text-center">
+			<div class="col-xs-8 col-xs-offset-2">
+				<img class="logo img-responsive" src="assets/img/logo.png" alt="TransLab">
+				<h1>Trans-Lab</h1>
+			</div>
 		</div>
 	</div>
 </header>
-<section id="" >
+<section id="iniciar-sesion">
 	<div class="container">
 		<div class="row">
-			
+			<form class="col-xs-12">
+				<div class="form-group">
+					<label class="sr-only" for="email-input">Correo electrónico</label>
+					<input type="email" class="form-control" id="email-input" placeholder="Correo electrónico">
+				</div>
+				<div class="form-group">
+					<label class="sr-only" for="password-input">Contraseña</label>
+					<input type="password" class="form-control" id="password-input" placeholder="Contraseña">
+				</div>
+				<button type="submit" class="btn btn-primary btn-lg btn-block">Iniciar sesión</button>
+				<p class="help-block"><a href="#">¿Olvidaste tu contraseña?</a></p>
+			</form>
 		</div>
 	</div>
 </section>
 <footer>
 	<div class="container">
-		<div class="row">
+		<div class="row text-center">
 			<div class="col-xs-12">
-				<small>Desarrollado por Caterina Da Silva</small>
+				<p class="lead">¿No tienes cuenta? <a href="#">Regístrate</a></p>
 			</div>
 		</div>
 	</div>
