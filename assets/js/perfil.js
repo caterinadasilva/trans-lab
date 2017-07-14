@@ -15,9 +15,10 @@ $(document).ready(function() {
 		console.log("N° bip: " + nuevaBip);
 
 		// Nuevo número de tarjeta
-		$(".list-group").append('<li class="list-group-item" id="tarjeta' + contadorBip + '">' + nuevaBip  +'</li>');
-		console.log(localStorage.nTarjeta);
+		$(".list-group").append('<li class="list-group-item" id="tarjeta' + contadorBip + '">' + nuevaBip  + '</li>');
+		$("#options").append('<option id="tarjeta' + contadorBip + '" value="' + nuevaBip  + '">' + nuevaBip  + '</option>');
 		localStorage.setItem('nTarjeta', $('.list-group').html());
+		localStorage.setItem('bipStorage', $('#options').html());
 		event.preventDefault();
 		$("#input-numero").val("");
 	});
@@ -34,5 +35,6 @@ function emailStorage() {
 function tarjetasGuardadas() {
 	if (localStorage.nTarjeta != "") {
 		$('.list-group').html(localStorage.getItem('nTarjeta'));
+		$("#options").html(localStorage.getItem('bipStorage'));
 	} 
 }

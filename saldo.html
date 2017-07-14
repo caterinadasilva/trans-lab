@@ -55,19 +55,15 @@
 			<form class="col-xs-12">
 				<div class="form-group">
 					<label for="input-numero">Ingresa tu número de tarjeta</label>
-					<input type="number" class="form-control input-lg" id="input-numero" placeholder="Número de tarjeta">
+					<input type="number" class="form-control input-lg" id="input-numero" placeholder="Número de tarjeta" value="">
 				</div>
 				<div class="lines-o">
 					<p>O</p>
 				</div>
 				<div class="form-group">
-					<label for="exampleInputEmail1">Elije una de tus tarjetas guardadas</label>
-					<select class="form-control input-lg">
-						<option disabled selected>Elije una tarjeta</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5</option>
+					<label for="select">Elije una de tus tarjetas guardadas</label>
+					<select id="selectBip" class="form-control input-lg bip-storage">
+						<option value="" disabled selected>Elije una tarjeta</option>
 					</select>
 				</div>
 				<button type="submit" id="ver-saldo" class="btn btn-primary btn-lg btn-block">Ver saldo</button>
@@ -80,14 +76,6 @@
 		<div class="row">
 			<div class="col-xs-12">
 				<div id="saldo-total" class="box-container">
-					<div class="box">
-						<div class="top">
-							<p class="lead">Saldo total</p>
-						</div>
-						<div class="bot">
-							<span>$1.480</span>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
