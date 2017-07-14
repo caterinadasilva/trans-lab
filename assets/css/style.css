@@ -154,6 +154,12 @@ header {
     background: #a9a9ab;
     margin: 0 0 2em;
 }
+header.user {
+    background: #F6A800;
+}
+header img {
+    margin-bottom: 15px;
+}
 .lines-o {
     text-align: center;
     display: block;
