@@ -178,20 +178,20 @@ header {
 .lines-o p:after {
     right: 0;
 }
-#saldo-res {
-    margin: 3em 0 0;
+.box-container {
+    margin: 24px 0 16px;
 }
-#saldo-total .box .top {
+.box .top {
     background: #3E3F41;
     text-align: center;
     color: #fff;
     padding: 5px 0;
 }
-#saldo-total .box .top .lead {
+.box .top .lead {
     text-transform: uppercase;
     margin: 0;
 }
-#saldo-total .box .bot {
+.box .bot {
     background: #a9a9ab;
     text-align: center;
     color: #fff;
